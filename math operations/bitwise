@@ -1,0 +1,10 @@
+x=0b111    #this value equal to  decimal 7
+y=ob101    #this value equal to  decimal 5
+y&x
+5
+
+z=y&x
+t=x|y   # or gate so binary or executed and give reseult binary 111
+t
+7
+
