@@ -20,12 +20,12 @@ number = "25"
 number1 = int(number)
 number2 = float(number)
 string1 =  str(number1)
-def function002(): {
-    #print(type(name))
+def function002():
+    print(type(name))
     #print(number1)
     #print(type(number2))
     print(number2)  # this will print 25.0 float value
-}
+# and also we do not want to use bracket in function declarion. {}
 function002()
 
 
