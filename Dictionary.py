@@ -1,5 +1,6 @@
 person = dict(Name = "chathura", Age = 25, Salary = 15000) # mutable
 print(person)
+print(type(person))
 print(person["Name"])
 person["Name"] = "chathura deepana"  # change the name values
 print(person["Name"])

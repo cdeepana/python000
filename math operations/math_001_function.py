@@ -1,6 +1,7 @@
 x=0b111
 y=0b101
 z=y&x
+print('{:04b}'.format(x&y))
 t=y|x
 def f(n): {
     print('{:08b}'.format(n))

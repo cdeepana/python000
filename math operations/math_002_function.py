@@ -28,7 +28,15 @@ def function002():
 # and also we do not want to use bracket in function declarion. {}
 function002()
 
-
+def function003():
+    x = ("re","ree","wee","fdf")
+    print("1st ==> {}".format(type(x)))
+    print("this is original x {}".format(x))
+    
+    y = list(x[0:3])
+    print("2nd ==> {}".format(type(y)))
+    print("this is y {}".format(y))
+function003()
 #SO ALL THESE TYPE OF DATA TYPE CAN CONVERT LIKE THIS
 
 # str()
