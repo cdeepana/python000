@@ -1,5 +1,3 @@
-
-
 def main():
     function01()
     result = sum(10,15)
