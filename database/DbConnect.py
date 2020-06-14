@@ -39,7 +39,6 @@ def updateRecord(ID,Age):
     db.commit()
     print("Updated record")
 def main():
-
     createTable()
     while 1:
         IndexOp = int(input("Select Operation, 1-Add: \n 2-to list Admins: \n 3-to delete Admin:\n 4-to Update \n 0-to exit: "))
