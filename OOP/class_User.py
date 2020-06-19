@@ -10,26 +10,42 @@ class User:
 
 # EXAMPLE 02
 class Car:
-    def __init__(self):
+    def __init__(self,type,model,price,millage):
         print("constructor car class")
-    def setType(self,type):
         self._type=type
+        self._model=model
+        self._price=price
+        self._millage=millage
+
     def getType(self):
-        return self._type
-    def setModel(self,model):
-        self._model=type
+        return self._type    
     def getModel(self):
         return self._model
-    def setSalePrice(self,price):
-        self._price=price
     def getSalePrice(self):
         return self._price
-    def setMillage(self,millage):
-        self._millage=millage
     def getMillage(self):
         return self._millage
     def getCurrentPrice(self):
-        return self._price - (self._millage*5)
+        return self._price - (self._millage*12)
+
+# EXAMPLE 03 
+class Bus:
+    def __init__(self,**kwargs):
+        print("constructor Bus class")
+        self._Data=kwargs
+
+    def getType(self):
+        return self._Data["Type"]   
+    def getModel(self):
+        return self._Data["Model"]
+    def getSalePrice(self):
+        return self._Data["Price"]
+    def getMillage(self):
+        return self._Data["Millage"]
+    def getAllData(self):
+        return self._Data
+#    def getCurrentPrice(self):
+#        return self._price - (self._millage*12)
 
 def main():
     # exmple 01 starting
@@ -42,15 +58,15 @@ def main():
     # example 01 end
 
     # example 02 starting
-    myCar=Car()
-    myCar.setType("Ford")
-    myCar.setModel("Laser")
-    myCar.setSalePrice(10000)
-    myCar.setMillage(12)
-
+    myCar=Car("Ford","Laser",10000,12)
     currentValueOfCar =myCar.getCurrentPrice()
     print("Hey my car's current value is Rs:{}".format(currentValueOfCar))
     # example 02 end
+
+    # example 03 starting
+    myBus=Bus(Type="Tata",Model="1980",Price="20000",Millage="20")
+    print(myBus.getSalePrice())
+    print(myBus.getAllData())
 
 if __name__ == '__main__':main()
 
