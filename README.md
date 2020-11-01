@@ -1,3 +1,6 @@
+basic to up python learning
+basic cover
+
 (1) execute .py file on terminal --->  python filename.py
 
 
